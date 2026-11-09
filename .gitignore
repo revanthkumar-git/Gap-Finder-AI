@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.local
+dist/
+build/
+*.log
+.DS_Store
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+__pycache__/
+*.py[cod]
+*$py.class
+coverage/
+.vite/
