@@ -81,7 +81,7 @@ The default model is `openai/gpt-oss-20b`. Set `LLM_MODEL` in `backend\.env` to 
 
 The Vercel project should use `frontend` as its root directory, build with `npm run build`, and output `dist`. Set `VITE_API_BASE_URL` to the public Render API URL followed by `/api` (for example, `https://your-service.onrender.com/api`).
 
-`render.yaml` defines a free Render web service for the API. Deploy it as a Blueprint from this repository, then set the Vercel environment variable to the created service URL and redeploy the frontend. Free Render services can sleep when idle, have ephemeral local files (so uploads and SQLite/Chroma data can be lost on restart or deploy), and have limited monthly usage. Use paid persistent storage and a production database for durable data. The free setup is for testing only.
+`render.yaml` defines a free Render web service for the API and seeds the demo account at startup. Set `DEMO_PASSWORD` in the Render service's Environment settings (do not commit it to the repository) to enable the documented demo login. Deploy it as a Blueprint from this repository, then set the Vercel environment variable to the created service URL and redeploy the frontend. Free Render services can sleep when idle, have ephemeral local files (so uploads and SQLite/Chroma data can be lost on restart or deploy), and have limited monthly usage. Use paid persistent storage and a production database for durable data. The free setup is for testing only.
 
 ## Core API
 

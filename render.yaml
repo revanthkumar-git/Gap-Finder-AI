@@ -16,3 +16,9 @@ services:
         value: https://gap-finder-ai-eta.vercel.app
       - key: LLM_MODEL
         value: openai/gpt-oss-20b
+      - key: SEED_DEMO
+        value: true
+      - key: DEMO_EMAIL
+        value: demo@gapfinder.ai
+      - key: DEMO_PASSWORD
+        sync: false
