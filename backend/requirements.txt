@@ -9,5 +9,4 @@ pwdlib[argon2]>=0.2.1,<1
 python-dotenv>=1.0,<2
 PyMuPDF>=1.25,<2
 chromadb>=0.6,<2
-sentence-transformers>=3,<6
 langchain-groq>=0.2,<1

@@ -6,7 +6,7 @@ from pathlib import Path
 
 import chromadb
 import pymupdf
-from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
+from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 from langchain_groq import ChatGroq
 
 from app.config import settings
@@ -25,7 +25,7 @@ def vector_client():
 
 @lru_cache(maxsize=1)
 def embedding_function():
-    return SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
+    return DefaultEmbeddingFunction()
 
 
 def collection_for(user_id: int):
